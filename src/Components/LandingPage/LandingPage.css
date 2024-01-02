@@ -13,9 +13,6 @@
   
   .link_button {
     position: absolute;
-   
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #5C9B2E;
     color: #fff;
     border: none;
@@ -24,13 +21,16 @@
     font-size: 16px;
     text-decoration: none;
     cursor: pointer;
-    transition: background-color 0.5s;
+    transition: background-color 0.5s,  transform 1s ease-in-out;
     animation: fade 1.5s infinite; /* animación de desvanecimiento */
   }
   
   .link_button:hover {
     background-color: #ffd700;
+    transform:  translateY(10px);
   }
+
+  
   
   @keyframes fade {
     0% {
