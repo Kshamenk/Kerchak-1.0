@@ -1,26 +1,37 @@
-import React from 'react'
+import React from 'react';
+import { NavLink,useNavigate } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const menuItems = [
+    { label: 'Home', url: '/home' },
+    { label: 'Products', url: '/products' },
+    { label: 'About Us', url: '/aboutus' },
+    { label: 'Blog', url: '/blog' },
+    { label: 'Solutions', url: '/solutions' },
+    { label: 'Team', url: '/team' },
+    { label: 'Contact Us', url: '/contactus' },
+  ];
+
   return (
-    <div className='header_container'>
+    <header className='header_container'>
       <div className='header_left'>
-      <h1>Logo izq</h1>
+        <h1 onClick={() => navigate('/home')}>Kerchak</h1>
       </div>
-        <div className='header_right'>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/aboutus">About Us</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/solutions">Solutions</a></li>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/contactus">ContactUs</a></li>
+      <nav className='header_right'>
+        <ul>
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <NavLink to={item.url}  activeClassName='active' exact>
+                {item.label}</NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
-          </ul>
-        </div>
-
-    </div>
-  )
-}
-
-export default Header
+export default Header;

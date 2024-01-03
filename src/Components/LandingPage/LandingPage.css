@@ -22,7 +22,7 @@
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.5s,  transform 1s ease-in-out;
-    animation: fade 1.5s infinite; /* animación de desvanecimiento */
+    animation: fade 1.5s infinite; 
   }
   
   .link_button:hover {

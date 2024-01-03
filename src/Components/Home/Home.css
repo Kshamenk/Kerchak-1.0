@@ -1,6 +1,21 @@
-.home_container{
+.home_container {
     background-image: url("../../Img/kerchak.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+    height: 100vh;
+    margin: 0;
+    position: relative; /* para que funcione z-index */
+  }
+  
+  /* fondo opaco */
+  .home_container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* valor alpha según la opacidad  */
+    z-index: 1; 
+  }

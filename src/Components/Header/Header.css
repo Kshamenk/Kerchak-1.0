@@ -1,0 +1,41 @@
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+    background-color: #5C9B2E;
+    color: white;
+  }
+  
+  .header_left h1 {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .header_right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .header_right li {
+    margin-right: 40px;
+  }
+  
+  .header_right a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.9s ease, border-bottom 0.9s ease;
+  }
+  .header_right a:hover {
+    color: #ffd700; 
+    border-bottom: 1px solid #ffd700;
+  }
+
+  .header_right a.active {
+    color: #ffd700;
+    border-bottom: 1px solid #ffd700;
+  }
+  
