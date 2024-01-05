@@ -15,17 +15,6 @@ const Header = () => {
     { label: 'Contact Us', url: '/contactus' },
   ];
 
-
-  // const menuItems = [
-  //   { label: 'Home', url: '/home' },
-  //   { label: 'Products', url: '/products' },
-  //   { label: 'About Us', url: '/aboutus' },
-  //   { label: 'Blog', url: '/blog' },
-  //   { label: 'Solutions', url: '/solutions' },
-  //   { label: 'Team', url: '/team' },
-  //   { label: 'Contact Us', url: '/contactus' },
-  // ];
-
   return (
     <header className='header_container'>
       <div className='header_left'>

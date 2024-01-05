@@ -1,4 +1,3 @@
-
 // import './App.css';
 // import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 // import Home from './Components/Home/Home';
@@ -20,15 +19,12 @@
 
 // export default App;
 
-
-
-
-import './App.css';
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './Components/Home/Home';
-import SearchPage from './Components/SearchPage/SearchPage';
-import LandingPage from './Components/LandingPage/LandingPage';
-import Header from './Components/Header/Header';
+import Home from "./Components/Home/Home";
+import SearchPage from "./Components/SearchPage/SearchPage";
+import LandingPage from "./Components/LandingPage/LandingPage";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (

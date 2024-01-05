@@ -1,45 +1,43 @@
 .landingpage_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover
-  }
-  
-.landing_image {
-    width: 100%;
-    height: auto;
-    max-height: 100vh;
-  }
-  
-  .link_button {
-    position: absolute;
-    background-color: #5C9B2E;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.5s,  transform 1s ease-in-out;
-    animation: fade 1.5s infinite; 
-  }
-  
-  .link_button:hover {
-    background-color: #ffd700;
-    transform:  translateY(10px);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
 
-  
-  
-  @keyframes fade {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
+.landing_image {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+}
+
+.link_button {
+  position: absolute;
+  background-color: #5c9b2e;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.5s, transform 1s ease-in-out;
+  animation: fade 1.5s infinite;
+}
+
+.link_button:hover {
+  background-color: #ffd700;
+  transform: translateY(10px);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
   }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
